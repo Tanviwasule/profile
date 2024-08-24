@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-title {
+            margin: 0;
+        }
+        .table {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .table th {
+            background-color: #f8f9fa;
+        }
+        .table tbody tr {
+            transition: background-color 0.2s;
+        }
+        .table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        .btn-light {
+            border-radius: 20px;
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+        .btn-light:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-add {
+            background-color: #28a745;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .btn-add:hover {
+            background-color: #218838;
+            color: white;
+        }
+        .progress-bar {
+            border-radius: 5px;
+        }
+        .progress-sm {
+            height: 8px;
+        }
+        .flex-shrink-0 img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .d-flex .text-muted {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title mb-0">Profiles</h5>
+        <a href="#" class="btn btn-add" >Add Profile</a>
+        <a href="#" class="btn btn-add" >Update Profile</a>
+        <a href="#" class="btn btn-add" >Delete Profile</a>
+    </div>
+
+    <table class="table table-borderless my-0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th class="d-none d-xxl-table-cell">Company</th>
+                <th class="d-none d-xl-table-cell">Author</th>
+                <th>Status</th>
+                <th class="d-none d-xl-table-cell">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="bg-light rounded-2">
+                                <img class="p-2" src="assets/images/logo1.png" alt="Project Apollo">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <strong>Project Apollo</strong>
+                            <div class="text-muted">
+                                Web, UI/UX Design
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <strong>Lechters</strong>
+                    <div class="text-muted">
+                        Real Estate
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <strong>Vanessa Tucker</strong>
+                    <div class="text-muted">
+                        HTML, JS, React
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column w-100">
+                        <span class="me-2 mb-1 text-muted">65%</span>
+                        <div class="progress progress-sm bg-success-light w-100">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <a href="#" class="btn btn-light">View</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="bg-light rounded-2">
+                                <img class="p-2" src="assets/images/logo2.png" alt="Project Bongo">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <strong>Project Bongo</strong>
+                            <div class="text-muted">
+                                Web
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <strong>Cellophane Transportation</strong>
+                    <div class="text-muted">
+                        Transportation
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <strong>William Harris</strong>
+                    <div class="text-muted">
+                        HTML, JS, Vue
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column w-100">
+                        <span class="me-2 mb-1 text-muted">33%</span>
+                        <div class="progress progress-sm bg-danger-light w-100">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 33%;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <a href="#" class="btn btn-light">View</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="bg-light rounded-2">
+                                <img class="p-2" src="assets/images/logo3.png" alt="Project Canary">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <strong>Project Canary</strong>
+                            <div class="text-muted">
+                                Web, UI/UX Design
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <strong>Clemens</strong>
+                    <div class="text-muted">
+                        Insurance
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <strong>Sharon Lessman</strong>
+                    <div class="text-muted">
+                        HTML, JS, Laravel
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column w-100">
+                        <span class="me-2 mb-1 text-muted">50%</span>
+                        <div class="progress progress-sm bg-warning-light w-100">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <a href="#" class="btn btn-light">View</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="bg-light rounded-2">
+                                <img class="p-2" src="assets/images/logo4.png" alt="Project Edison">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <strong>Project Edison</strong>
+                            <div class="text-muted">
+                                UI/UX Design
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <strong>Affinity Investment Group</strong>
+                    <div class="text-muted">
+                        Finance
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <strong>Vanessa Tucker</strong>
+                    <div class="text-muted">
+                        HTML, JS, React
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column w-100">
+                        <span class="me-2 mb-1 text-muted">80%</span>
+                        <div class="progress progress-sm bg-success-light w-100">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <a href="#" class="btn btn-light">View</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="bg-light rounded-2">
+                                <img class="p-2" src="assets/images/logo5.png" alt="Project Indigo">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <strong>Project Indigo</strong>
+                            <div class="text-muted">
+                                Web, UI/UX Design
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xxl-table-cell">
+                    <strong>Konsili</strong>
+                    <div class="text-muted">
+                        Retail
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <strong>Christina Mason</strong>
+                    <div class="text-muted">
+                        HTML, JS, Vue
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column w-100">
+                        <span class="me-2 mb-1 text-muted">78%</span>
+                        <div class="progress progress-sm bg-primary-light w-100">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="d-none d-xl-table-cell">
+                    <a href="#" class="btn btn-light">View</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+/* src/app/dashboard/dashboard.component.css */
+table {
+    width: 100%;
+  }
+  
+  .mat-header-cell, .mat-cell {
+    text-align: left;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+}
+.card-title {
+    margin: 0;
+}
+.card-actions svg {
+    stroke: white;
+}
+.table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.table th, .table td {
+    vertical-align: middle;
+    border-bottom: 1px solid #dee2e6;
+}
+.table th {
+    background-color: #f8f9fa;
+}
+.table tbody tr {
+    transition: background-color 0.2s;
+}
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.btn-light {
+    border-radius: 20px;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+.btn-light:hover {
+    background-color: #007bff;
+    color: white;
+}
+.progress-bar {
+    border-radius: 5px;
+}
+.progress-sm {
+    height: 8px;
+}
+.flex-shrink-0 img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.d-flex .text-muted {
+    font-size: 0.9em;
+}
+
+  

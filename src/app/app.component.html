@@ -7,7 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<style>
+<!-- <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
@@ -321,8 +321,8 @@
         </a>
       </div>
     </div>
-  </div>
-</main>
+  </div> -->
+
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -333,4 +333,41 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+<!-- <router-outlet /> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link rel="stylesheet" href="app.component.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required=""  formControlName="signupobj.username">
+					<input type="email" name="email" placeholder="Email" required="" formControlName="signupobj.email">
+          
+					<input type="password" name="pswd" placeholder="Password" required="" formControlName="signupobj.password">
+					<button (click)="onsignup()">Sign up</button>
+
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required=""  formControlName="signupobj.email">
+					<input type="password" name="pswd" placeholder="Password" required=""  formControlName="signupobj.password">
+					<button (click)="onLogin()">Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
